@@ -1,0 +1,136 @@
+/* Заголовок */
+.bigbox {
+    width:1000px;
+    height:700px;
+	margin-top:    10px;
+    margin-right:  auto;
+	margin-bottom: 0px;
+    margin-left:   auto;
+	/*border: 1px solid rgb(0,0,0);*/
+}
+
+/* Коробка */
+.box {
+    width:100px;
+    height:100px;
+	margin-top:    50px;
+    margin-right:  auto;
+	margin-bottom: 0px;
+    margin-left:   auto;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	/* border: 1px solid rgb(0,0,0); */
+	background-color: #963B47;
+}
+/* Обработка событий box */
+.box:hover{
+  transform: rotate(10deg) scale(1.2);
+  transition-duration: 0.3s;
+}
+.box:not(:hover){
+	transform: rotate(0deg) scale(1.0);
+	transition-duration: 0.3s;
+}
+
+#res{
+	width:100px;
+    height:20px;
+	margin-top:    50px;
+    margin-right:  auto;
+	margin-bottom: 0px;
+    margin-left:   auto;
+	text-align: center;
+	/* border: 1px solid rgb(0,0,0); */
+}
+
+#resMax{
+	width:100px;
+    height:20px;
+	margin-top:    10px;
+    margin-right:  auto;
+	margin-bottom: 0px;
+    margin-left:   auto;
+	text-align: center;
+	/* border: 1px solid rgb(0,0,0); */
+}
+
+/* box1 */
+.box1 {
+    background: #029FC7;
+}
+.box1:hover{
+  transform: rotate(10deg) scale(1.4);
+  transition-duration: 0.3s;
+}
+
+.box1:not(:hover){
+	transform: rotate(0deg) scale(1.0);
+	transition-duration: 0.3s;
+}
+
+
+/* box2 */
+.box2 {
+    background: #913947;
+}
+.box2:hover{
+  transform: rotate(-10deg) scale(1.2);
+  transition-duration: 0.3s;
+}
+.box2:not(:hover){
+	transform: rotate(0deg) scale(1.0);
+	transition-duration: 0.3s;
+}
+
+
+/* box3 */
+.box3 {
+    background: #FFBB55;
+}
+.box3:hover{
+  transform: rotate(110deg) scale(1.2);
+  transition-duration: 0.3s;
+}
+.box3:not(:hover){
+	transform: rotate(0deg) scale(1.0);
+	transition-duration: 0.3s;
+}
+
+
+/* box4 */
+.box4 {
+    background: #116644;
+}
+.box4:hover{
+  transform: rotate(-195deg) scale(1.2);
+  transition-duration: 0.5s;
+}
+.box4:not(:hover){
+	transform: rotate(0deg) scale(1.0);
+	transition-duration: 0.3s;
+}
+
+
+
+
+
+.colorbox1 {
+    background: #007799;
+	width:140px;
+    height:140px;
+}
+.colorbox2 {
+    background: #990011;
+	width:140px;
+    height:140px;
+}
+.colorbox3 {
+    background: #D99700;
+	width:140px;
+    height:140px;
+}
+.colorbox4 {
+    background: #005533;
+	width:140px;
+    height:140px;
+}
