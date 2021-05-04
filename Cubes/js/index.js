@@ -1,4 +1,59 @@
 jQuery('document').ready(function(){
+
+  /* Каталог */
+
+  var btncatalog = document.querySelector('.btncatalog');
+	
+  $('.btncatalog').on('mousedown', btnCatalogMouseDown);
+  $('.btncatalog').on('mouseup',   btnCatalogMouseUp);
+  //$('.btncatalog').on('click',     btnCatalogClick);
+
+	
+  function btnCatalogMouseDown(){
+    btncatalog.classList.add('colorbtncatalog');
+  }
+  function btnCatalogMouseUp(){
+    btncatalog.classList.remove('colorbtncatalog');
+  }
+  function btnCatalogClick(){
+    var catalog = document.getElementsByTagName('input')[0];
+    var val = catalog.value;
+	//jQuery('.debugger').html(val);	
+  }
+  
+  
+  
+  $(document).on('click', '.btncatalog', function(){
+    var catalog = document.getElementsByTagName('input')[0];
+    var val = catalog.value;
+	//jQuery('.debugger').html(val);
+    
+	// объект для отправки
+    var user = {
+    txt: val
+    };
+ 
+    var request = new XMLHttpRequest();
+    function reqReadyStateChange() {
+    if (request.readyState == 4) {
+        var status = request.status;
+        if (status == 200) {
+            jQuery('.debugger').html(user.txt);	
+            document.getElementById("out").innerHTML=request.responseText;
+        }
+    }
+    }
+    // строка с параметрами для отправки
+	// http://cc33953.tmweb.ru/php/index.php
+    var body = "txt=" + user.txt;
+    request.open("GET", "http://cc33953.tmweb.ru/php/index.php?"+body);
+    request.onreadystatechange = reqReadyStateChange;
+    request.send();
+  })
+  
+  
+
+	/* Кубы */
 	
   var condition1 = 0; // Направление отсчёта
   var condition2 = 0;
@@ -222,5 +277,6 @@ jQuery('document').ready(function(){
   });
 
 });
+
 
 
