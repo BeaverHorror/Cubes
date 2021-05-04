@@ -1,7 +1,96 @@
+
+/* Рабочее поле */
+.workingfield {	
+	width:500px;
+    height:800px;
+	float:left;
+	margin-top:    10px;
+    margin-right:  auto;
+	margin-bottom: 0px;
+    margin-left:   10px;
+	/*border: 1px solid rgb(0,0,0);*/
+}
+
+.textcatalog{
+	width:250px;
+	height:25px;
+	margin-top:    0px;
+    margin-right:  0px;
+	margin-bottom: 0px;
+    margin-left:   10px;
+    color: #116644;
+}
+
+.debugger{
+	width:250px;
+	height:25px;
+	margin-top:    0px;
+    margin-right:  0px;
+	margin-bottom: 0px;
+    margin-left:   10px;
+    color: #116644;
+	border: 1px solid rgb(0,0,0);
+}
+#out{
+	width:480px;
+	height:670px;
+	margin-top:    0px;
+    margin-right:  0px;
+	margin-bottom: 0px;
+    margin-left:   10px;
+    color: #116644;
+	/*border: 1px solid rgb(0,0,0);*/
+}
+
+.inputcatalog{
+	width:250px;
+	height:25px;
+	margin-top:    0px;
+    margin-right:  0px;
+	margin-bottom: 0px;
+    margin-left:   10px;
+    color: #116644;
+    border-radius:0px;
+    border: none; outline: none;
+	border: 1px solid #116644;
+}
+
+/* Кнопки */ 
+.btncatalog{
+	width:150px;
+	height:25px;
+	color: #FFFFFF;
+	background-color:#913947;
+	margin-top:    0px;
+    margin-right:  0px;
+	margin-bottom: 0px;
+    margin-left:   10px;
+	font-size:14px;
+	border-radius:0px;
+	border: none; outline: none;
+	border: 1px solid #116644;
+}
+.btncatalog:hover{
+	background-color:#029FC7;	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Заголовок */
 .bigbox {
-    width:1000px;
-    height:700px;
+    width:300px;
+    height:800px;
+	float:left;
 	margin-top:    10px;
     margin-right:  auto;
 	margin-bottom: 0px;
@@ -135,4 +224,10 @@
     background: #005533;
 	width:140px;
     height:140px;
+}
+
+.colorbtncatalog:hover{
+	background: #FFBB55;
+	width:150px;
+	height:25px;
 }
